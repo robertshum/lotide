@@ -1,4 +1,3 @@
-//Function Imp.
 const assertEqual = function(actual, expected) {
   //use string literals ` for performance gains! (ie: don't use '+').
   if (actual === expected) {
@@ -8,18 +7,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//Test Code
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+const head = function(array) {
+  if (array === undefined) {
+    return undefined;
+  }
+  return array[0];
+};
 
-//true
-assertEqual("Identical Strings", "Identical Strings");
-
-//false
-assertEqual("Identical Strings", "identical Strings");
-
-//true
-assertEqual(3, 3);
-
-//false
-assertEqual("3", 3);
+assertEqual(head([5, 6, 7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([]), undefined);
