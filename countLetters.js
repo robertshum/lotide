@@ -17,12 +17,14 @@ const countLetters = function(sentence) {
   //go through the sentence
   for (let char of sentence) {
     //edge case: if it's a space, we ignore it
-    if (char !== " " && count[char]) {
-      //if it exists in dict, then we add the count
-      count[char] += 1;
-    } else {
-      //if it doesnt exist in dict, then we set it to one
-      count[char] = 1;
+    if (char !== " ") {
+      if (count[char]) {
+        //if it exists in dict, then we add the count
+        count[char] += 1;
+      } else {
+        //if it doesnt exist in dict, then we set it to one
+        count[char] = 1;
+      }
     }
   }
 
