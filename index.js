@@ -1,13 +1,17 @@
 const head = require("./head");
 const tail = require("./tail");
 const middle = require("./middle");
+const flatten = require("./flatten");
+const countOnly = require("./countOnly");
+const letterPositions = require("./letterPositions");
+const findKeyByValue = require("./findKeyByValue");
 const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
+const eqObjects = require("./eqObjects");
 const assertEqual = require("./assertEqual");
 
 //Missing some methods that we did not refactor such as flatten, without, countLetters etc.
 
-//we can use the shorthand for obj. literals.  Values don't need to be explicit if the keys match the variable names.
+//we can use the shorthand for obj. literals.  Values don't need to be explicit if the keys match the variable names.  Ex:
 // module.exports = {
 //   head: head,
 //   tail: tail,
@@ -21,7 +25,11 @@ module.exports = {
   head,
   tail,
   middle,
+  flatten,
+  countOnly,
+  letterPositions,
+  findKeyByValue,
   eqArrays,
-  assertArraysEqual,
+  eqObjects,
   assertEqual
 };

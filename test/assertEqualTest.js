@@ -1,18 +1,28 @@
 const assertEqual = require('../assertEqual');
+const assert = require("chai").assert;
 
-//Test Code
-//false
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+describe("#assertEqual - IGNORE THE EMOJIS.  Look at the test cases", () => {
+  it("return false for different strings", () => {
+    assert.isFalse(assertEqual("Lighthouse Labs", "Bootcamp"));
+  });
 
-//true
-assertEqual("Identical Strings", "Identical Strings");
+  it("return true for same strings", () => {
+    assert.isTrue(assertEqual(1, 1));
+  });
 
-//false
-assertEqual("Identical Strings", "identical Strings");
+  it("return true for same strings", () => {
+    assert.isTrue(assertEqual("Identical Strings", "Identical Strings"));
+  });
 
-//true
-assertEqual(3, 3);
+  it("return false for different strings", () => {
+    assert.isFalse(assertEqual("Identical Strings", "identical Strings"));
+  });
 
-//false
-assertEqual("3", 3);
+  it("return true for same strings", () => {
+    assert.isTrue(assertEqual(3, 3));
+  });
+
+  it("return false for different strings", () => {
+    assert.isFalse(assertEqual("3", 3));
+  });
+});
