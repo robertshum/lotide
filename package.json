@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@rshum/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A collection of utility functions inspired by Lodash library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/robertshum/lotide.git"
   },
-  "author": "",
+  "author": "Robert Shum (Lighthouse Labs)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/robertshum/lotide/issues"
