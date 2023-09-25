@@ -5,6 +5,7 @@ const flatten = require("./flatten");
 const countOnly = require("./countOnly");
 const letterPositions = require("./letterPositions");
 const findKeyByValue = require("./findKeyByValue");
+const map = require("./map");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
 const eqArrays = require("./eqArrays");
@@ -31,6 +32,7 @@ module.exports = {
   countOnly,
   letterPositions,
   findKeyByValue,
+  map,
   takeUntil,
   without,
   eqArrays,
