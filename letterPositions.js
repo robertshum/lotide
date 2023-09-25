@@ -27,38 +27,3 @@ const letterPositions = function(sentence) {
 };
 
 module.exports = letterPositions;
-
-const eqArrays = function(array1, array2) {
-
-  //check if array sizes match
-  if (array1.length !== array2.length) {
-    return false;
-  }
-
-  //loop and check each element
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      //if any fail, just return false;
-      return false;
-    }
-  }
-
-  //end of the loop, just return true
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  //use string literals ` for performance gains! (ie: don't use '+').
-  if (eqArrays(array1, array2)) {
-    console.log(`✔ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${array1} !== ${array2}`);
-  }
-};
-
-//Tests
-const results = letterPositions("hello");
-assertArraysEqual(results["h"], [0]);
-assertArraysEqual(results["e"], [1]);
-assertArraysEqual(results["l"], [2, 3]);
-assertArraysEqual(results["o"], [4]);
