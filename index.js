@@ -8,6 +8,7 @@ const findKeyByValue = require("./findKeyByValue");
 const map = require("./map");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
+const findKey = require("./findKey");
 const eqArrays = require("./eqArrays");
 const eqObjects = require("./eqObjects");
 const assertEqual = require("./assertEqual");
@@ -35,6 +36,7 @@ module.exports = {
   map,
   takeUntil,
   without,
+  findKey,
   eqArrays,
   eqObjects,
   assertEqual
