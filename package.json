@@ -1,6 +1,6 @@
 {
   "name": "@rshum/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of utility functions inspired by Lodash library.",
   "main": "index.js",
   "directories": {
